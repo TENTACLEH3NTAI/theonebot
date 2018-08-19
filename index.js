@@ -1,7 +1,9 @@
 const Commando = require("discord.js-commando");
 const randomLink = require('random-link');
 const neko = require("neko.js");
-const bot = new Commando.Client();
+const bot = new Commando.Client({
+    commandPrefix: 'Don'
+});
 let nekoclient = new neko.Client();
 
 bot.registry.registerGroup("music","Music");
