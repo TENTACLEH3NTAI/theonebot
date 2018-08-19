@@ -19,10 +19,6 @@ class LewdCommand extends commando.Command
     {
         
         if (message.channel.nsfw === false) {
-            var hugPic = new discord.RichEmbed()
-            .setDescription("here, take some hugs intead")
-            .setColor("0xff5ffd")
-            .setThumbnail(hug.url)
             nekoclient.hug().then((hug) =>  message.channel.sendMessage({
                 "embed": {
                     title: 'here, take some hugs intead',
@@ -34,10 +30,6 @@ class LewdCommand extends commando.Command
         }
 
         else{
-            var lewdPic = new discord.RichEmbed()
-            .setDescription("Lewd Nekos provided by nekos.life")
-            .setColor("0xff5ffd")
-            .setThumbnail(LewdNeko.neko)
             nekoclient.LewdNeko().then((LewdNeko) => message.channel.sendMessage({
                 "embed": {
                         title: 'Enjoy your hentai',
