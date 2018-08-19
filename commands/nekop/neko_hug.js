@@ -23,14 +23,29 @@ class LewdCommand extends commando.Command
             .setDescription("here, take some hugs intead")
             .setColor("0xff5ffd")
             .setThumbnail(hug.url)
-            nekoclient.hug().then((hugPic) =>  message.channel.sendEmbed(hugPic));
+            nekoclient.hug().then((hug) =>  message.channel.sendMessage({
+                "embed": {
+                    title: 'here, take some hugs intead',
+                    "image": {
+                    "url": hug.url,
+                    }
+                }
+        }));
         }
+
         else{
             var lewdPic = new discord.RichEmbed()
             .setDescription("Lewd Nekos provided by nekos.life")
             .setColor("0xff5ffd")
             .setThumbnail(LewdNeko.neko)
-            nekoclient.LewdNeko().then((lewdPic) => message.channel.sendEmbed(lewdPic));//message.reply(LewdNeko.neko));
+            nekoclient.LewdNeko().then((LewdNeko) => message.channel.sendMessage({
+                "embed": {
+                        title: 'Enjoy your hentai',
+                        "image": {
+                        "url": LewdNeko.neko,
+                        }
+                    }
+                }));      //message.channel.sendEmbed(lewdPic));
         }
     }
 }
