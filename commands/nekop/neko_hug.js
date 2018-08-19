@@ -17,13 +17,20 @@ class LewdCommand extends commando.Command
 
     async run(message, args)
     {
-        var lewdPic = new discord.RichEmbed()
-            .setDescription("Lewd Nekos provided by nekos.life")
+        
         if (message.channel.nsfw === false) {
-            nekoclient.hug().then((hug) => message.channel.sendEmbed(lewdPic)); //message.reply('here, take some hugs instead:  '+hug.url));
+            var hugPic = new discord.RichEmbed()
+            .setDescription("here, take some hugs intead")
+            .setColor("0xff5ffd")
+            .setThumbnail(hug.url)
+            nekoclient.hug().then((hug) =>  message.channel.sendEmbed(hugPic));
         }
         else{
-            nekoclient.LewdNeko().then((LewdNeko) => message.reply(LewdNeko.neko));
+            var lewdPic = new discord.RichEmbed()
+            .setDescription("Lewd Nekos provided by nekos.life")
+            .setColor("0xff5ffd")
+            .setThumbnail(LewdNeko.neko)
+            nekoclient.LewdNeko().then((LewdNeko) => message.channel.sendEmbed(lewdPic));//message.reply(LewdNeko.neko));
         }
     }
 }
