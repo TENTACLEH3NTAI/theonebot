@@ -17,7 +17,7 @@ class LewdCommand extends commando.Command
     async run(message, args)
     {
         if (message.channel.nsfw === false) {
-            nekoclient.hug().then((hug) => message.reply(hug.neko));
+            nekoclient.hug().then((hug) => message.reply(hug.url));
         }
         else{
             nekoclient.LewdNeko().then((LewdNeko) => message.reply(LewdNeko.neko));
