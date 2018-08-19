@@ -3,29 +3,29 @@ const neko = require("neko.js");
 const discord = require("discord.js");
 let nekoclient = new neko.Client();
 
-class NekoCommand extends commando.Command
+class PatCommand extends commando.Command
 {
     constructor(client)
     {
         super(client,{
-            name: 'neko',
+            name: 'pat',
             group: 'nekop',
-            memberName: 'neko',
-            description: 'neko pics poggers'
+            memberName: 'pat',
+            description: 'well done <3'
         });
     }
 
     async run(message, args)
     {
-        nekoclient.neko().then((neko) =>  message.channel.sendMessage({
+        nekoclient.pat().then((pat) =>  message.channel.sendMessage({
             "embed": {
-                title: "ain't nekos handsome?",
+                title: "well done <3",
                 "image": {
-                "url": neko.neko,
+                "url": pat.url,
                 }
             }
     }));
     }
 }
 
-module.exports = NekoCommand;
+module.exports = PatCommand;

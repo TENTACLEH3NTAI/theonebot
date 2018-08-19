@@ -3,29 +3,29 @@ const neko = require("neko.js");
 const discord = require("discord.js");
 let nekoclient = new neko.Client();
 
-class NekoCommand extends commando.Command
+class LizardCommand extends commando.Command
 {
     constructor(client)
     {
         super(client,{
-            name: 'neko',
+            name: 'lizard',
             group: 'nekop',
-            memberName: 'neko',
-            description: 'neko pics poggers'
+            memberName: 'lizard',
+            description: 'lmao'
         });
     }
 
     async run(message, args)
     {
-        nekoclient.neko().then((neko) =>  message.channel.sendMessage({
+        nekoclient.lizard().then((lizard) =>  message.channel.sendMessage({
             "embed": {
-                title: "ain't nekos handsome?",
+                title: "what am I doing with my life",
                 "image": {
-                "url": neko.neko,
+                "url": lizard.url,
                 }
             }
     }));
     }
 }
 
-module.exports = NekoCommand;
+module.exports = LizardCommand;

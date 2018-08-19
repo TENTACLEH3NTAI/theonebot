@@ -17,7 +17,6 @@ class LewdCommand extends commando.Command
 
     async run(message, args)
     {
-        
         if (message.channel.nsfw === false) {
             nekoclient.hug().then((hug) =>  message.channel.sendMessage({
                 "embed": {
@@ -28,7 +27,6 @@ class LewdCommand extends commando.Command
                 }
         }));
         }
-
         else{
             nekoclient.LewdNeko().then((LewdNeko) => message.channel.sendMessage({
                 "embed": {
@@ -37,7 +35,7 @@ class LewdCommand extends commando.Command
                         "url": LewdNeko.neko,
                         }
                     }
-                }));      //message.channel.sendEmbed(lewdPic));
+                }));
         }
     }
 }
