@@ -2,7 +2,6 @@ const Commando = require("discord.js-commando");
 const randomLink = require('random-link');
 const neko = require("neko.js");
 const bot = new Commando.Client();
-const TOKEN = 'NDc5Mjg1MzI0NTgxNjk5NjA1.DlnOYg.7TscrHuVIKE0ennm8sV4iNng55c'
 let nekoclient = new neko.Client();
 
 bot.registry.registerGroup("music","Music");
@@ -55,4 +54,4 @@ bot.on('message', function(message){
     }
 });
 
-bot.login(process.env.TOKEN);
+bot.login(process.env.token);
