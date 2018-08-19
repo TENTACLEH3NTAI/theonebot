@@ -23,14 +23,14 @@ class LewdCommand extends commando.Command
             .setDescription("here, take some hugs intead")
             .setColor("0xff5ffd")
             .setThumbnail(hug.url)
-            nekoclient.hug().then((hug) =>  message.channel.sendEmbed(hugPic));
+            nekoclient.hug().then((hugPic) =>  message.channel.sendEmbed(hugPic));
         }
         else{
             var lewdPic = new discord.RichEmbed()
             .setDescription("Lewd Nekos provided by nekos.life")
             .setColor("0xff5ffd")
             .setThumbnail(LewdNeko.neko)
-            nekoclient.LewdNeko().then((LewdNeko) => message.channel.sendEmbed(lewdPic));//message.reply(LewdNeko.neko));
+            nekoclient.LewdNeko().then((lewdPic) => message.channel.sendEmbed(lewdPic));//message.reply(LewdNeko.neko));
         }
     }
 }
