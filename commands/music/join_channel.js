@@ -43,7 +43,7 @@ class JoinChannelCommand extends commando.Command
                 message.member.voiceChannel.join()
                     .then(connection =>{
                         var server = servers[message.guild.id];
-                        message.reply("Entered Channel!");
+                        message.reply("Entered Channel! Now playing "+message);
                         server.queue.push(args);
                         Play(connection, message);
                     })
