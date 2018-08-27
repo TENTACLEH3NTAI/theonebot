@@ -48,7 +48,7 @@ bot.on('message', function(message){
     }
     
     if(message.content.toLowerCase().includes("this is so sad".toLowerCase())){
-        message.reply("I want to ded", {files: ["https://goo.gl/3V1i1e"]});
+        message.reply("Can we hit children in traffic?", {files: ["https://goo.gl/3V1i1e"]});
     }
     
     if(message.content.toLowerCase().includes("hentai".toLowerCase())&&message.content.toLowerCase().includes("pls".toLowerCase())||message.content.toLowerCase().includes("hentai".toLowerCase())&&message.content.toLowerCase().includes("please".toLowerCase())){
