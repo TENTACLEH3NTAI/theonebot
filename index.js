@@ -42,6 +42,16 @@ bot.on('message', function(message){
             bot.destroy();
         }
     }
+    
+    if(message.content.toLowerCase().includes("loli".toLowerCase())){
+        message.channel.sendMessage({
+                "embed": {
+                    title: 'FBI OPEN UP',
+                    "image": {
+                    "url": http://i.imgur.com/YRi9JaT.gif,
+                    }
+        }
+    }
 
     if(message.content.toLowerCase().includes("hentai".toLowerCase())&&message.content.toLowerCase().includes("pls".toLowerCase())||message.content.toLowerCase().includes("hentai".toLowerCase())&&message.content.toLowerCase().includes("please".toLowerCase())){
         if (message.channel.nsfw === false) {
