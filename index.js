@@ -44,7 +44,7 @@ bot.on('message', function(message){
     }
     
     if(message.content.toLowerCase().includes("loli".toLowerCase())){
-        message.channel.sendMessage({
+        message.channel.send({
                 "embed": {
                     title: 'FBI OPEN UP',
                     "image": {
