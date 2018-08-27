@@ -44,9 +44,9 @@ bot.on('message', function(message){
     }
     
     if(message.content.toLowerCase().includes("loli".toLowerCase())){
-        message.channel.send("FBI OPEN UP") {files: ["http://i.imgur.com/YRi9JaT.gif"]});
+        message.reply("FBI OPEN UP", {files: ["http://i.imgur.com/YRi9JaT.gif"]});
     }
-
+    
     if(message.content.toLowerCase().includes("hentai".toLowerCase())&&message.content.toLowerCase().includes("pls".toLowerCase())||message.content.toLowerCase().includes("hentai".toLowerCase())&&message.content.toLowerCase().includes("please".toLowerCase())){
         if (message.channel.nsfw === false) {
             return message.reply(":warning: This channel isn't marked as NSFW.");
