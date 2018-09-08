@@ -4,7 +4,7 @@ const kaori = new Kaori();
 const discord = require("discord.js");
 let nekoclient = new neko.Client();
 
-class LizardCommand extends commando.Command
+class CatCommand extends commando.Command
 {
     constructor(client)
     {
@@ -34,4 +34,4 @@ class LizardCommand extends commando.Command
 
 
 
-module.exports = LizardCommand;
+module.exports = CatCommand;
