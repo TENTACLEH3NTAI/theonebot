@@ -8,6 +8,7 @@ let nekoclient = new neko.Client();
 
 bot.registry.registerGroup("music","Music");
 bot.registry.registerGroup("nekop","nekop");
+bot.registry.registerGroup("Kaori","Kaori");
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + "/commands");
 
