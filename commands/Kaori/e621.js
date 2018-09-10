@@ -1,4 +1,4 @@
-const commando = require("discord.js-commando");
+/*const commando = require("discord.js-commando");
 const Kaori = require("kaori");
 const kaori = new Kaori();
 const discord = require("discord.js");
@@ -35,3 +35,4 @@ class CatCommand extends commando.Command
 
 
 module.exports = CatCommand;
+*/
